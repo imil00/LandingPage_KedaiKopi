@@ -1,0 +1,418 @@
+/* --- General Reset --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background: #fff;
+}
+
+/* --- Header Styling --- */
+.top-bar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Logo dan Nama */
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-area img {
+  width: 50px;
+}
+
+.logo-area h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Menu Navigasi */
+.top-bar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.top-bar nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+}
+
+.top-bar nav ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #c9a16c;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.top-bar nav ul li a:hover::after {
+  width: 100%;
+}
+
+#beranda {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 40px;
+  gap: 40px;
+}
+
+/* Teks vertical stack */
+.beranda-text {
+  display: block; /* Pasti akan atas-bawah */
+}
+
+.beranda-text h2 {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.beranda-text p {
+  font-size: 18px;
+  color: #555;
+  max-width: 500px;
+  margin: 0;
+}
+
+
+/* Gambar di kanan */
+.beranda-image {
+  flex: 1;
+  text-align: right;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 500px;
+  object-fit: contain;
+}
+
+/* Responsive HP */
+@media (max-width: 768px) {
+  #beranda {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .beranda-text {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-image {
+    width: 80%;
+  }
+}
+
+
+#sejarah {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#sejarah div {
+  flex: 1;
+  text-align: center;
+}
+
+#sejarah h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #c9a16c;
+  margin-bottom: 10px;
+}
+
+#sejarah p {
+  font-size: 14px;
+  color: #666;
+}
+
+#menu {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+#menu h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#menu .hero-image {
+  width: 250px;
+  border-radius: 9999px;
+  margin-bottom: 20px;
+}
+
+#menu p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* FILTER BUTTONS */
+.menu-filter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.menu-filter button {
+  background: #c8a97e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.menu-filter button:hover {
+  background: #a67c52;
+}
+
+/* JUDUL KATEGORI */
+.menu-items h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 40px 0 20px;
+  text-align: left;
+}
+
+/* MENU ITEMS GRID */
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* CARD ITEM */
+.menu-items > div {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  text-align: center;
+  padding: 15px;
+}
+
+.menu-items > div:hover {
+  transform: translateY(-5px);
+}
+
+.menu-items img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.menu-items p {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0 5px;
+}
+
+.menu-items span {
+  color: #c8a97e;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 768px) {
+  .menu-filter {
+    gap: 8px;
+  }
+
+  #menu h2 {
+    font-size: 32px;
+  }
+
+  .menu-items img {
+    height: 150px;
+  }
+}
+
+.menu-section {
+  display: none;
+}
+
+.menu-section:target {
+  display: block;
+}
+
+/* Default tampilkan COFFEE saat belum klik apapun */
+#coffe:target ~ .menu-section,
+#iced:target ~ .menu-section,
+#pastry:target ~ .menu-section,
+#roti:target ~ .menu-section,
+#snack:target ~ .menu-section {
+  display: none;
+}
+
+#coffe:target {
+  display: block;
+}
+
+/* Styling menu filter */
+.menu-filter a {
+  padding: 10px 20px;
+  margin: 5px;
+  background: #c59d5f;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Layout grid 3 kolom */
+.menu-section div {
+  display: inline-block;
+  width: 30%;
+  margin: 10px;
+  vertical-align: top;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  background: #f9f9f9;
+}
+
+.menu-section img {
+  width: 150px;              
+  height: 150px;            
+  object-fit: contain;       
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;          
+}
+
+.menu-section span {
+  display: block;
+  margin-top: 5px;
+  font-weight: bold;
+  color: #c59d5f;
+}
+
+/* BAGIAN GRADE */
+#grade {
+  background-image: url('image/BijiKopi.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#grade h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.grade-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.grade-list div {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  transition: transform 0.3s ease;
+}
+
+.grade-list div:hover {
+  transform: translateY(-10px);
+}
+
+.grade-list img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.grade-list strong {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.grade-list p {
+  font-size: 0.9rem;
+  color: #f0f0f0;
+}
+
+/* FOOTER */
+footer {
+  border-top: 1px solid #ccc;
+  padding: 10px 20px;
+  background: #fff;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Location sejajar dengan social icons */
+footer p a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Social icons tetap sejajar */
+footer .social-icons {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+footer .social-icons img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
