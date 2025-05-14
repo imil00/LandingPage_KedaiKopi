@@ -4,13 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kedai Kopi</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </style>
 </head>
 <body>
   <header>
     <div class="top-bar">
-      <img src="image/LogoCaffe.jpg" width="100">
-      <h1>KEDAI KOPI</h1>
+      <div class="logo-area">
+        <img src="image/LogoCaffe.jpg" alt="Logo Kedai Kopi">
+        <h1>KEDAI KOPI</h1>
+      </div>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <nav>
         <ul>
           <li><a href="#beranda">Beranda</a></li>
@@ -23,124 +32,236 @@
   </header>
 
   <section id="beranda">
-    <h2>AROMA KOPI YANG UNIK</h2>
-    <p>Kopi diseduh dengan memanggang biji kopi hijau di atas bara panas, memberikan kesempatan untuk mencicipi.</p>
-    <img src="image/Kopi1.jpg" class="hero-image">
+    <div class="beranda-content">
+      <div class="beranda-text">
+        <h2>AROMA KOPI YANG UNIK</h2>
+        <p>Kopi diseduh dengan memanggang biji kopi hijau di atas bara panas, memberikan kesempatan untuk mencicipi sensasi kopi terbaik dengan aroma yang memikat.</p>
+        <a href="#menu" class="cta-button">Lihat Menu</a>
+      </div>
+    </div>
   </section>
 
   <section id="sejarah">
     <div>
       <h3>1992</h3>
-      <p><strong>Awal Kami</strong> - Memulai dari tempat kecil dengan semangat besar.</p>
+      <p><strong>Awal Kami</strong> - Memulai dari tempat kecil dengan semangat besar untuk memberikan pengalaman kopi terbaik.</p>
     </div>
     <div>
       <h3>2002</h3>
-      <p><strong>Biji Kopi</strong> - Menggunakan biji kopi pilihan dari berbagai negara.</p>
+      <p><strong>Biji Kopi</strong> - Menggunakan biji kopi pilihan dari berbagai negara dengan standar kualitas tertinggi.</p>
     </div>
     <div>
       <h3>2014</h3>
-      <p><strong>Keluarga</strong> - Dikelola oleh keluarga pencinta kopi.</p>
+      <p><strong>Keluarga</strong> - Dikelola oleh keluarga pencinta kopi yang mendedikasikan hidupnya untuk seni kopi.</p>
     </div>
     <div>
       <h3>2019</h3>
-      <p><strong>Standar Internasional</strong> - Memenuhi standar kualitas internasional.</p>
+      <p><strong>Standar Internasional</strong> - Memenuhi standar kualitas internasional dengan sertifikasi dari asosiasi kopi dunia.</p>
     </div>
   </section>
 
   <section id="menu">
-  <h2>MENU FAVORIT</h2>
-  <img src="image/Barista.jpg" class="hero-image">
-  <p>Setiap sajian adalah hasil tangan terampil para ahli kopi dan kuliner yang berdedikasi.</p>
+    <h2>MENU FAVORIT</h2>
+    <img src="image/Barista.jpg" class="hero-image" alt="Barista">
+    <p>Setiap sajian adalah hasil tangan terampil para ahli kopi dan kuliner yang berdedikasi untuk memberikan pengalaman terbaik bagi penikmat kopi.</p>
 
-  <div class="menu-filter">
-    <a href="#coffe">COFFE</a>
-    <a href="#iced">ICED</a>
-    <a href="#pastry">PASTRY DAN KUE</a>
-    <a href="#roti">ROTI DAN SANDWICH</a>
-    <a href="#snack">SNACK</a>
-  </div>
+    <div class="menu-filter">
+      <a href="#coffe">COFFEE</a>
+      <a href="#iced">ICED</a>
+      <a href="#pastry">PASTRY DAN KUE</a>
+      <a href="#roti">ROTI DAN SANDWICH</a>
+      <a href="#snack">SNACK</a>
+    </div>
 
-  <!-- COFFE -->
-  <div id="coffe" class="menu-section">
-    <h3>COFFE</h3>
-    <div><p>Americano Coffe</p><img src="image/AmericanoCoffe.jpg"><span>Rp 30.000</span></div>
-    <div><p>Capucinno Coffe</p><img src="image/CapucinnoCoffe.jpg"><span>Rp 25.000</span></div>
-    <div><p>Coffe Latte</p><img src="image/CoffeLatte.jpg"><span>Rp 20.000</span></div>
-    <div><p>Coffe With Milk</p><img src="image/CoffeWithMilk.jpg"><span>Rp 20.000</span></div>
-    <div><p>Espresso Lungo</p><img src="image/EspressoLungo.jpg"><span>Rp 22.000</span></div>
-    <div><p>Latte Macchiato</p><img src="image/LatteMacchiato.jpg"><span>Rp 28.000</span></div>
-  </div>
+    <!-- COFFE -->
+    <div id="coffe" class="menu-section">
+      <h3>COFFEE</h3>
+      <div><p>Americano Coffee</p><img src="image/AmericanoCoffe.jpg" alt="Americano Coffee"><span>Rp 30.000</span></div>
+      <div><p>Capucinno Coffee</p><img src="image/CapucinnoCoffe.jpg" alt="Capucinno Coffee"><span>Rp 25.000</span></div>
+      <div><p>Coffee Latte</p><img src="image/CoffeLatte.jpg" alt="Coffee Latte"><span>Rp 20.000</span></div>
+      <div><p>Coffee With Milk</p><img src="image/CoffeWithMilk.jpg" alt="Coffee With Milk"><span>Rp 20.000</span></div>
+      <div><p>Espresso Lungo</p><img src="image/EspressoLungo.jpg" alt="Espresso Lungo"><span>Rp 22.000</span></div>
+      <div><p>Latte Macchiato</p><img src="image/LatteMacchiato.jpg" alt="Latte Macchiato"><span>Rp 28.000</span></div>
+    </div>
 
-  <!-- ICED -->
-  <div id="iced" class="menu-section">
-    <h3>ICED</h3>
-    <div><p>Caramel Milk Shake</p><img src="image/CaramelMilkShakeBiasa.jpg"><span>Rp 28.000</span></div>
-    <div><p>Chai Latte</p><img src="image/ChaiLatteBiasa.jpg"><span>Rp 17.000</span></div>
-    <div><p>Iced Chocolate</p><img src="image/IcedChocolateBiasa.jpg"><span>Rp 19.000</span></div>
-    <div><p>Lemonade Sparkling</p><img src="image/LemonadeSparklingBiasa.jpg"><span>Rp 15.000</span></div>
-    <div><p>Lychee Tea</p><img src="image/LycheeTeaBiasa.jpg"><span>Rp 15.000</span></div>
-    <div><p>Matcha Latte</p><img src="image/MatchaLatteBiasa.jpg"><span>Rp 25.000</span></div>
-  </div>
+    <!-- ICED -->
+    <div id="iced" class="menu-section">
+      <h3>ICED</h3>
+      <div><p>Caramel Milk Shake</p><img src="image/CaramelMilkShakeBiasa.jpg" alt="Caramel Milk Shake"><span>Rp 28.000</span></div>
+      <div><p>Chai Latte</p><img src="image/ChaiLatteBiasa.jpg" alt="Chai Latte"><span>Rp 17.000</span></div>
+      <div><p>Iced Chocolate</p><img src="image/IcedChocolateBiasa.jpg" alt="Iced Chocolate"><span>Rp 19.000</span></div>
+      <div><p>Lemonade Sparkling</p><img src="image/LemonadeSparklingBiasa.jpg" alt="Lemonade Sparkling"><span>Rp 15.000</span></div>
+      <div><p>Lychee Tea</p><img src="image/LycheeTeaBiasa.jpg" alt="Lychee Tea"><span>Rp 15.000</span></div>
+      <div><p>Matcha Latte</p><img src="image/MatchaLatteBiasa.jpg" alt="Matcha Latte"><span>Rp 25.000</span></div>
+    </div>
 
-  <!-- PASTRY DAN KUE -->
-  <div id="pastry" class="menu-section">
-    <h3>PASTRY DAN KUE</h3>
-    <div><p>Brownies</p><img src="image/BrowniesKue.jpg"><span>Rp 30.000</span></div>
-    <div><p>Cheese cake</p><img src="image/CheesecakeKue.jpg"><span>Rp 35.000</span></div>
-    <div><p>Cinnamon Roll</p><img src="image/CinnamonRollKue.jpg"><span>Rp 27.000</span></div>
-    <div><p>Croissant</p><img src="image/CroissantKue.jpg"><span>Rp 25.000</span></div>
-    <div><p>Donat</p><img src="image/DonatKue.jpg"><span>Rp 20.000</span></div>
-    <div><p>Muffin</p><img src="image/MuffinKue.jpg"><span>Rp 25.000</span></div>
-  </div>
+    <!-- PASTRY DAN KUE -->
+    <div id="pastry" class="menu-section">
+      <h3>PASTRY DAN KUE</h3>
+      <div><p>Brownies</p><img src="image/BrowniesKue.jpg" alt="Brownies"><span>Rp 30.000</span></div>
+      <div><p>Cheese cake</p><img src="image/CheesecakeKue.jpg" alt="Cheese cake"><span>Rp 35.000</span></div>
+      <div><p>Cinnamon Roll</p><img src="image/CinnamonRollKue.jpg" alt="Cinnamon Roll"><span>Rp 27.000</span></div>
+      <div><p>Croissant</p><img src="image/CroissantKue.jpg" alt="Croissant"><span>Rp 25.000</span></div>
+      <div><p>Donat</p><img src="image/DonatKue.jpg" alt="Donat"><span>Rp 20.000</span></div>
+      <div><p>Muffin</p><img src="image/MuffinKue.jpg" alt="Muffin"><span>Rp 25.000</span></div>
+    </div>
 
-  <!-- ROTI DAN SANDWICH -->
-  <div id="roti" class="menu-section">
-    <h3>ROTI DAN SANDWICH</h3>
-    <div><p>Bagel</p><img src="image/BagelRoti.jpg"><span>Rp 26.000</span></div>
-    <div><p>Club Sandwich</p><img src="image/ClubSandwichRoti.jpg"><span>Rp 27.000</span></div>
-    <div><p>Panini</p><img src="image/PaniniRoti.jpg"><span>Rp 30.000</span></div>
-    <div><p>Roti Bakar</p><img src="image/RotiBakar.jpg"><span>Rp 20.000</span></div>
-    <div><p>Toast</p><img src="image/ToastRoti.jpg"><span>Rp 32.000</span></div>
-  </div>
+    <!-- ROTI DAN SANDWICH -->
+    <div id="roti" class="menu-section">
+      <h3>ROTI DAN SANDWICH</h3>
+      <div><p>Bagel</p><img src="image/BagelRoti.jpg" alt="Bagel"><span>Rp 26.000</span></div>
+      <div><p>Club Sandwich</p><img src="image/ClubSandwichRoti.jpg" alt="Club Sandwich"><span>Rp 27.000</span></div>
+      <div><p>Panini</p><img src="image/PaniniRoti.jpg" alt="Panini"><span>Rp 30.000</span></div>
+      <div><p>Roti Bakar</p><img src="image/RotiBakar.jpg" alt="Roti Bakar"><span>Rp 20.000</span></div>
+      <div><p>Toast</p><img src="image/ToastRoti.jpg" alt="Toast"><span>Rp 32.000</span></div>
+    </div>
 
-  <!-- SNACK -->
-  <div id="snack" class="menu-section">
-    <h3>SNACK</h3>
-    <div><p>Truffle Fries</p><img src="image/trufflefriesSnack.jpg"><span>Rp 35.000</span></div>
-    <div><p>Onion Ring</p><img src="image/OnionRingsSnack.jpg"><span>Rp 33.000</span></div>
-    <div><p>Nachos</p><img src="image/NachosSnack.jpg"><span>Rp 37.000</span></div>
-    <div><p>French Fries</p><img src="image/FrenchFriesSnack.jpg"><span>Rp 25.000</span></div>
-    <div><p>Churros</p><img src="image/ChurrosSnack.jpg"><span>Rp 25.000</span></div>
-  </div>
-</section>
-
-  <section id="grade" style="background-image: url('image/BijiKopi.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; color: white;">
-    <h2>KUALITAS TERBAIK DUNIA</h2>
-    <div class="grade-list">
-      <div><strong><img src="image/BijiKopiArabika.jpeg">Arabika</strong><p>Rasa halus dengan aroma khas yang kompleks</p></div>
-      <div><strong><img src="image/BijiKopiExcelsa.jpg">Excelsa</strong><p>Cita rasa asam segar dengan karakter unik</p></div>
-      <div><strong><img src="image/BijiKopiLiberika.jpeg">Liberika</strong><p>Aroma buah-buahan dengan rasa eksotis</p></div>
-      <div><strong><img src="image/BijiKopiLuwak.jpeg">Luwak</strong><p>Kopi langka dengan rasa lembut dan khas</p></div>
-      <div><strong><img src="image/BijiKopiRobusta.jpeg">Robusta</strong><p>Rasa kuat, pahit, dan berkafein tinggi</p></div>
+    <!-- SNACK -->
+    <div id="snack" class="menu-section">
+      <h3>SNACK</h3>
+      <div><p>Truffle Fries</p><img src="image/trufflefriesSnack.jpg" alt="Truffle Fries"><span>Rp 35.000</span></div>
+      <div><p>Onion Ring</p><img src="image/OnionRingsSnack.jpg" alt="Onion Ring"><span>Rp 33.000</span></div>
+      <div><p>Nachos</p><img src="image/NachosSnack.jpg" alt="Nachos"><span>Rp 37.000</span></div>
+      <div><p>French Fries</p><img src="image/FrenchFriesSnack.jpg" alt="French Fries"><span>Rp 25.000</span></div>
+      <div><p>Churros</p><img src="image/ChurrosSnack.jpg" alt="Churros"><span>Rp 25.000</span></div>
     </div>
   </section>
 
-  <footer id="kontak">
-    <p>&copy; 2025 Kedai Kopi. Semua hak dilindungi.</p>
-    <p>
-      <a href="https://maps.app.goo.gl/nCHjL5qzMYZsQVwx7" target="_blank">
-        <img src="image/Location.jpg" style="width:16px; vertical-align:middle; margin-right:4px;">
-        Pamulang
-      </a>
-    </p>
-    <div class="social-icons">
-      <a href="https://wa.me/6281234567890" target="_blank" aria-label="WhatsApp">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" width="24" style="margin-right: 10px;">
-      </a>
-      <a href="https://instagram.com/nama_akun_ig" target="_blank" aria-label="Instagram">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" width="24">
-      </a>
+  <section id="grade">
+    <h2>KUALITAS TERBAIK DUNIA</h2>
+    <div class="grade-list">
+      <div>
+        <img src="image/BijiKopiArabika.jpeg" alt="Arabika">
+        <strong>Arabika</strong>
+        <p>Rasa halus dengan aroma khas yang kompleks, kaya akan cita rasa buah dan bunga.</p>
+      </div>
+      <div>
+        <img src="image/BijiKopiExcelsa.jpg" alt="Excelsa">
+        <strong>Excelsa</strong>
+        <p>Cita rasa asam segar dengan karakter unik dan kompleksitas rasa yang memikat.</p>
+      </div>
+      <div>
+        <img src="image/BijiKopiLiberika.jpeg" alt="Liberika">
+        <strong>Liberika</strong>
+        <p>Aroma buah-buahan dengan rasa eksotis yang memberikan pengalaman berbeda.</p>
+      </div>
+      <div>
+        <img src="image/BijiKopiLuwak.jpeg" alt="Luwak">
+        <strong>Luwak</strong>
+        <p>Kopi langka dengan rasa lembut dan khas yang menjadi primadona dunia.</p>
+      </div>
+      <div>
+        <img src="image/BijiKopiRobusta.jpeg" alt="Robusta">
+        <strong>Robusta</strong>
+        <p>Rasa kuat, pahit, dan berkafein tinggi dengan sentuhan cokelat yang unik.</p>
+      </div>
     </div>
-  </footer>
+  </section>
+
+<footer id="kontak">
+  <div class="footer-content">
+    
+    <!-- KIRI: Logo -->
+    <div class="footer-logo">
+      <img src="image/LogoCaffe.jpg" alt="Logo Kedai Kopi">
+      <h3>KEDAI KOPI</h3>
+      <p>Tempat dimana kopi terbaik disajikan dengan cinta</p>
+    </div>
+    
+    <!-- KANAN: Kontak -->
+    <div class="footer-contact">
+      <h4>Hubungi Kami</h4>
+      <div class="social-icons">
+        <a href="https://www.tiktok.com/" target="_blank" aria-label="Tiktok">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok">
+        </a>
+        <a href="https://instagram.com/kedaikopi" target="_blank" aria-label="Instagram">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+        </a>
+        <a href="https://facebook.com/kedaikopi" target="_blank" aria-label="Facebook">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
+        </a>
+      </div>
+      <p><strong>Alamat:</strong> Jl. Kopi DRS No. 88, Pamulang, Tangerang Selatan, Banten 15417</p>
+      <p><strong>Email:</strong> info@kedaikopi.com</p>
+      <p><strong>Telepon:</strong> +62 812-0000-1111</p>
+    </div>
+    
+  </div>
+
+  <div class="copyright">
+    <p>&copy; 2025 Kedai Kopi. Semua hak dilindungi.</p>
+    <p class="fade-text">Terima kasih telah mengunjungi Kedai Kopi ☕</p>
+  </div>
+</footer>
+
+
+
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      document.querySelector('nav').classList.toggle('active');
+    });
+    
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function() {
+        document.querySelector('nav').classList.remove('active');
+      });
+    });
+    
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const target = document.querySelector(this.getAttribute('href'));
+        
+        if (target) {
+          window.scrollTo({
+            top: target.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+
+  <script>
+  document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('nav').classList.toggle('active');
+  });
+  
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', function() {
+      document.querySelector('nav').classList.remove('active');
+    });
+  });
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      const target = document.querySelector(this.getAttribute('href'));
+      
+      if (target) {
+        document.querySelectorAll('.menu-section').forEach(section => {
+          section.style.display = 'none';
+        });
+
+        target.style.display = 'block';
+
+        window.scrollTo({
+          top: target.offsetTop - 80,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+  document.querySelectorAll('.menu-section').forEach((section, index) => {
+    if (index !== 0) {
+      section.style.display = 'none';
+    }
+  });
+</script>
+
 </body>
 </html>
